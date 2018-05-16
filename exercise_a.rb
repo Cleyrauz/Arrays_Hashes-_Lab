@@ -13,3 +13,5 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston",
   p stops[-5]
   return_falkikrk_high = stops.at(2)
   p return_falkikrk_high
+  array_reverse = stops.reverse
+  p array_reverse
