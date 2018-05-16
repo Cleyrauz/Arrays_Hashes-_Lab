@@ -5,5 +5,6 @@ stops.push("Edinburgh Waverley")
 stops.unshift("Glasgow Queen St")
 stops.insert(4, 'Polmont')
 stops.delete_at(6)
-
+stops.delete_at(2)
+# 
 p stops
