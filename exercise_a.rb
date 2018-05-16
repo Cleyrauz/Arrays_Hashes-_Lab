@@ -3,5 +3,6 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston",
 
 stops.push("Edinburgh Waverley")
 stops.unshift("Glasgow Queen St")
+stops.insert(4, 'Polmont')
 
 p stops
