@@ -66,3 +66,21 @@ my_array.each { |x| p x if x.even? }
 p users["Erik"][:lottery_numbers].push(7)
 
 p users["Erik"][:home_town] = "Edinburgh"
+users["Erik"][:pets].push({
+  :name => "Fluffy",
+  :species => "dog"
+})
+p users["Erik"][:pets][4]
+
+users["Cleyra"] = {
+  :twitter => "cleyrauc",
+  :lottery_numbers => [8, 3, 8, 1, 2],
+  :home_town => "La Asuncion",
+  :pets => [
+  {
+    :name => "tommy",
+    :species => "cat"
+  }]
+}
+
+p users["Cleyra"]
