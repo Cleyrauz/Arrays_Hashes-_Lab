@@ -62,3 +62,5 @@ p users["Erik"][:lottery_numbers].min
 
 my_array = users["Avril"][:lottery_numbers]
 my_array.each { |x| p x if x.even? }
+
+p users["Erik"][:lottery_numbers].push(7)
