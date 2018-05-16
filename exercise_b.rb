@@ -55,3 +55,4 @@ users = {
 }
 
 p users["Jonathan"][:twitter]
+p users["Erik"][:home_town]
