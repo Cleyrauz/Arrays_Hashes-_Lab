@@ -30,3 +30,9 @@ united_kingdom.push[3] = {
 }
 
 p united_kingdom
+
+# Use a loop to print the names of all the countries in the UK.
+
+for country in united_kingdom
+  p country[:name]
+end
