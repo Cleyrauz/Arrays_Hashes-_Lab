@@ -16,7 +16,7 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston",
   p stops.index("Linlithgow")
 
   # Remove "Livingston" from the array using its name
-  stops.delete_at(6)
+  stops.delete("Livingston")
 
   # Delete "Cumbernauld" from the array by index
   stops.delete_at(2)
@@ -27,15 +27,10 @@ stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston",
   p "There are #{array_length} stops!"
 
   # How many ways can we return "Falkirk High" from the array?
+  p stops
   p stops[2]
-for stop in stops
-  if stop == "Falkirk High"
-    p "This is #{stop}."
-  else
-    p "This is not Falkirk High this is #{stop}."
-  end
-end
-p stops[2..2]
+  p stops[-5]
+
 
 # Reverse the positions of the stops in the array
   array_reverse = stops.reverse
