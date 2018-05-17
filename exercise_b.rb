@@ -54,24 +54,45 @@ users = {
   }
 }
 
+# Get Jonathan's Twitter handle (i.e. the string "jonnyt")
 p users["Jonathan"][:twitter]
+
+# Get Erik's hometown
 p users["Erik"][:home_town]
+
+# Get the array of Erik's lottery numbers
 p users["Erik"][:lottery_numbers]
+
+# Get the type of Avril's pet Monty
 p users["Avril"][:pets][0][:species]
+
+# Get the smallest of Erik's lottery numbers
 p users["Erik"][:lottery_numbers].min
 
-my_array = users["Avril"][:lottery_numbers]
-my_array.each { |x| p x if x.even? }
+# Return an array of Avril's lottery numbers that are even
+even_lottery_numbers = []
+for x in users["Avril"][:lottery_numbers]
+  if x % 2 == 0
+    even_lottery_numbers.push(x)
+  end
+end
+p even_lottery_numbers
 
+# Erik is one lottery number short! Add the number 7 to be included in his
+# lottery numbers
 p users["Erik"][:lottery_numbers].push(7)
 
+# hange Erik's hometown to Edinburgh
 p users["Erik"][:home_town] = "Edinburgh"
+
+# Add a pet dog to Erik called "Fluffy"
 users["Erik"][:pets].push({
   :name => "Fluffy",
   :species => "dog"
 })
 p users["Erik"][:pets][4]
 
+# Add another person to the users hash
 users["Cleyra"] = {
   :twitter => "cleyrauc",
   :lottery_numbers => [8, 3, 8, 1, 2],
